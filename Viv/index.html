@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <style>
-    * { box-sizing: border-box; }
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
-    body {
-      background-image: url(tile.png);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      -webkit-animation: fadein 1s;
-      animation-timing-function: ease-out
-    }
-    h1 { color: #fff; }
-    .container {
-      height: 60vh;
-      width: 50vw;
-      overflow: scroll;
-      background-color: #161616;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      border-radius: 4px;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
-    .container a {
-      flex: 1;
-      min-width: 33.3333333%;
-      margin: 0;
-      padding: 20px;
-      color: #777;
-      text-decoration: none;
-      transition: 0.2s;
-      text-align: center;
-      font-size: 110%;
-    }
-    .container a:hover {
-      position: relative;
-      z-index: 999;
-      color: white;
-      background-color: #222; 
-    }
-    .container a:not(:hover) {
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    }
-    .container h3 {
-      margin: 0;
-      min-width: 100%;
-      display: block;
-      color: #ddd;
-      background-color: #111;
-      letter-spacing: 2px;
-      padding: 20px;
-    }
-    ::-webkit-scrollbar { 
-        display: none; 
-    }
-    @-webkit-keyframes fadein {
-        from { transform: translateY(-100%); }
-        to   { transform: translateY(0%); }
-    }
-  </style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url(tile.png);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            -webkit-animation: fadein 1s;
+            animation-timing-function: ease-out
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        .container {
+            height: 60vh;
+            width: 50vw;
+            overflow: scroll;
+            background-color: #161616;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 4px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .container a {
+            flex: 1;
+            min-width: 33.3333333%;
+            margin: 0;
+            padding: 20px 0 20px 50px;
+            color: #777;
+            text-decoration: none;
+            transition: 0.2s;
+            text-align: left;
+            font-size: 110%;
+        }
+
+        .container a:hover {
+            position: relative;
+            z-index: 999;
+            color: white;
+            background-color: #222;
+        }
+
+        .container a:not(:hover) {
+
+        }
+
+        .container h3 {
+            margin: 0;
+            min-width: 100%;
+            display: block;
+            color: #ddd;
+            background-color: #111;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0%);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>こんにちは仕 (✿◠‿◠)</h1>
-  <div class="container">
+<h1>こんにちは仕 (✿◠‿◠)</h1>
+<div class="container">
     <h3>General</h3>
     <a href="https://www.youtube.com">YouTube</a>
     <a href="https://google.co.uk">Google</a>
@@ -82,6 +100,7 @@
     <a href="http://www.ebay.co.uk/">eBay</a>
     <a href="https://moonscript.org/reference/">MoonScript Reference</a>
     <a href="https://love2d.org/wiki/love.physics">love.physics()</a>
+    <a></a>
 
     <h3>Social</h3>
     <a href="https://store.steampowered.com/login/">Steam</a>
@@ -113,6 +132,8 @@
     <a href="https://console.developers.google.com/">Google API</a>
     <a href="https://analytics.google.com/">Google Analytics</a>
     <a href="https://repl.it/languages/lua">Lua compiler</a>
-  </div>
+    <a></a>
+    <a></a>
+</div>
 </body>
 </html>
